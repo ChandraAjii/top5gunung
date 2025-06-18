@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunung Prau - Blog Pendaki Pemula</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="text-4xl md:text-5xl font-bold">Gunung Prau</h1>
+    <p class="mt-2 text-lg md:text-xl">Destinasi Sempurna untuk Pendaki Pemula dengan Golden Sunrise yang Memukau</p>
+  </header>
+
+  <main>
+    <section>
+      <img src="../images/prau.jpg" alt="Gunung Prau" width="100%">
+      <h2 class="text-2xl font-semibold text-gray-800 mt-4">Pengenalan Gunung Prau</h2>
+      <p class="mt-2 text-gray-600">
+        Gunung Prau, yang terletak di Dataran Tinggi Dieng, Jawa Tengah, adalah salah satu destinasi pendakian favorit bagi pemula. Dengan ketinggian 2.565 meter di atas permukaan laut, gunung ini menawarkan kombinasi jalur yang ramah, waktu pendakian yang singkat, dan pemandangan alam yang luar biasa. Dikenal sebagai "Bukit Teletubbies" karena perbukitan hijau yang lembut di puncaknya, Gunung Prau adalah pilihan ideal untuk mereka yang ingin merasakan sensasi mendaki tanpa tantangan ekstrem.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6">Tingkat Kesulitan dan Jalur Pendakian</h2>
+      <p class="mt-2 text-gray-600">
+        Gunung Prau memiliki jalur pendakian yang relatif mudah, menjadikannya cocok untuk pendaki pemula. Rata-rata waktu tempuh menuju puncak adalah 3-5 jam, tergantung pada jalur yang dipilih dan kecepatan pendaki. Beberapa jalur populer meliputi:
+      </p>
+      <ul class="list-disc pl-6 mt-2 text-gray-600">
+        <li><strong>Jalur Patak Banteng</strong>: Jalur ini adalah yang paling populer karena jalannya cukup landai dan terdapat banyak pos peristirahatan. Cocok untuk pemula yang ingin pendakian santai.</li>
+        <li><strong>Jalur Dieng</strong>: Sedikit lebih menantang dengan tanjakan yang lebih curam, tetapi waktu tempuhnya lebih singkat.</li>
+        <li><strong>Jalur Dwarawati</strong>: Jalur ini menawarkan pemandangan yang indah, tetapi kurang ramai dibandingkan Patak Banteng.</li>
+      </ul>
+      <p class="mt-2 text-gray-600">
+        Meskipun jalurnya tidak terlalu sulit, pendaki tetap perlu mempersiapkan fisik yang baik dan membawa perlengkapan dasar seperti sepatu trekking, jaket hangat, dan air minum yang cukup. Cuaca di Dieng bisa berubah dengan cepat, jadi selalu periksa prakiraan sebelum mendaki.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6">Pemandangan yang Ditawarkan</h2>
+      <p class="mt-2 text-gray-600">
+        Salah satu daya tarik utama Gunung Prau adalah <em>Golden Sunrise</em>, momen saat matahari terbit dengan cahaya keemasan yang memukau. Dari puncak, pendaki dapat menikmati panorama gunung-gunung besar seperti Sindoro, Sumbing, Merbabu, dan Merapi yang berdiri gagah di kejauhan. Saat malam, langit cerah sering kali memperlihatkan taburan bintang yang spektakuler, menjadikan camping di puncak pengalaman yang tak terlupakan. Selain itu, savana hijau dan bukit-bukit kecil di puncak menciptakan suasana yang damai dan Instagramable.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6">Tips Pendakian</h2>
+      <p class="mt-2 text-gray-600">
+        Untuk memastikan pendakian yang aman dan menyenangkan, berikut beberapa tips:
+      </p>
+      <ul class="list-disc pl-6 mt-2 text-gray-600">
+        <li><strong>Pilih waktu yang tepat</strong>: Musim kemarau (April-Oktober) adalah waktu terbaik untuk mendaki karena jalur tidak licin dan pemandangan lebih jelas.</li>
+        <li><strong>Persiapkan perlengkapan</strong>: Bawa tenda, sleeping bag, dan pakaian hangat untuk mengantisipasi suhu dingin di malam hari.</li>
+        <li><strong>Pendakian malam</strong>: Banyak pendaki memulai perjalanan tengah malam untuk sampai di puncak sebelum sunrise. Pastikan membawa headlamp.</li>
+        <li><strong>Jaga kebersihan</strong>: Bawa kembali semua sampah dan hindari merusak vegetasi di gunung.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6">Akses dan Fasilitas</h2>
+      <p class="mt-2 text-gray-600">
+        Gunung Prau mudah diakses dari kota-kota besar seperti Yogyakarta, Semarang, atau Solo. Dari pusat kota Wonosobo, perjalanan menuju basecamp di Dieng memakan waktu sekitar 1-2 jam dengan kendaraan. Di basecamp, tersedia fasilitas seperti parkir, toilet, dan warung makan. Beberapa jalur juga memiliki pos pendakian dengan tempat berteduh, sehingga pendaki dapat beristirahat sejenak.
+      </p>
+
+      <a href="../index.html" class="mt-4">Kembali ke Beranda</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Blog Pendaki Pemula</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in animation for sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
